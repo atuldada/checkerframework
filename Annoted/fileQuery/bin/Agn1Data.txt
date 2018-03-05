@@ -1,0 +1,26 @@
+Locations
+LocationId, City, State, Country
+1, Mumbai, Maharashtra, India
+2, Pune, Maharashtra, India
+3, Pali, Maharashtra, India
+4, Pali, UttarPradesh, India
+5, SFO, California, USA
+
+Professions
+ProfessionId, Designation, Industry
+1, Software Developer, Software
+2, Project Leader, Software
+3, QA, Software
+4, Technical Writer, Software
+5, Production Engineer, Chemical
+6, Production Engineer, Mechanical
+7, QA, Chemical
+
+Individuals
+Name, Gender, LocationId, ProfessionId
+Sudhan, M, 1, 1
+Kamlesh, M, 2, 2
+Amit, M, 1, 1
+Chaitra, F, 4, 5
+Amol, M, 5, 2
+
