@@ -10,7 +10,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
  * FileInput Reads file and passes the data to {@link FileQuery} to perform user
  * query
  * 
- * @author Atul Dada
+ * @author Atul Dadas
  */
 public class FileInput implements Constants {
 
@@ -60,8 +60,7 @@ public class FileInput implements Constants {
 			}
 		}
 
-		// check table for validity if correct: print tree and solve query
-                //else ask user to correct format
+		// check table for validity if correct print tree and solve query
 		if (file.checkTable() == true) {
 			System.out.println(WRONG_TABLE_FORMAT);
 			System.exit(0);
