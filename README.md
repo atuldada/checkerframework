@@ -9,7 +9,7 @@ To compile from terminal, following command needs to be passed : javacheck -proc
 
 and for index cheker
 
-javacheck -processor org.checkerframework.checker.nullness.NullnessChecker Annoted/fileQuery/src/com/assignment/filequery/{Name of the java file}
+javacheck -processor  index  Annoted/fileQuery/src/com/assignment/filequery/{Name of the java file}
 
 
 Note : Here javacheck is an alias of $CHECKERFRAMEWORK/checker/bin/javac which is created by adding the following syntax in the ~/.bashrc file as mentioned in the manual :
