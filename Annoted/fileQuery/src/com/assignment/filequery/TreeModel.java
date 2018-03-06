@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 import org.checkerframework.checker.index.qual.NonNegative;
+import org.checkerframework.checker.nullness.qual.NonNull;
 import org.checkerframework.checker.nullness.qual.Nullable;
 
 /**
@@ -42,9 +43,8 @@ public class TreeModel {
 	 * @return true if node is added successfully else return false if already
 	 *         present
 	 */
-	private boolean addChild(TreeModel node) {
-		if (node == null)
-			return false;
+	private boolean addChild(@NonNull TreeModel node) {
+		
 		if (children.size() < N) {
 			return children.add(node);
 		}
@@ -58,9 +58,11 @@ public class TreeModel {
 	 * @param label
 	 *            (Required) add child node with given string
 	 * @return true if successfully added false if already present
+	 * @throws Exception if new node can not 
 	 */
-	public boolean addChild(String label) {
-		return addChild(new TreeModel(label, N));
+	public boolean addChild(String label)  {
+		TreeModel node=new TreeModel(label, N);
+		return addChild(node);
 	}
 
 	/**
@@ -84,7 +86,6 @@ public class TreeModel {
 	@Nullable
 	public TreeModel getChild(@NonNegative int index) {
 		if (index < children.size()) {
-
 			return children.get(index);
 		}
 
