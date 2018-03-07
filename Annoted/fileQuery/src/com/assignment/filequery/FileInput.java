@@ -6,9 +6,9 @@ import java.io.IOException;
 
 import org.checkerframework.checker.nullness.qual.Nullable;
 
-/**s
- * FileInput Reads file and passes the data to {@link FileQuery} to perform user
- * query
+/**
+ * s FileInput Reads file and passes the data to {@link FileQuery} to perform
+ * user query
  * 
  * @author Atul Dadas
  */
@@ -18,7 +18,8 @@ public class FileInput implements Constants {
 
 		FileReader fr = null;
 		BufferedReader br = null;
-		@Nullable  String currentLine;
+		@Nullable
+		String currentLine;
 		FileQuery file = new FileQuery();
 
 		int noOfTables = 0;
@@ -60,14 +61,8 @@ public class FileInput implements Constants {
 			}
 		}
 
-		// check table for validity if correct print tree and solve query
-		if (file.checkTable() == true) {
-			System.out.println(WRONG_TABLE_FORMAT);
-			System.exit(0);
-		} else {
-			System.out.println(PRINT_TREE);
-			file.printTree();
-			file.solveUserQuery();
-		}
+		System.out.println(PRINT_TREE);
+		file.printTree();
+		file.solveUserQuery();
 	}
 }

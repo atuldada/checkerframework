@@ -5,11 +5,12 @@ This repo contains the Annoted and unannoted version of my College Assignment.
 ## Assignment:Implement a tree to Query data stored in text file.
 
 
-To compile from terminal, following command needs to be passed : javacheck -processor org.checkerframework.checker.nullness.NullnessChecker Annoted/fileQuery/src/com/assignment/filequery/{Name of the java file}
+To compile from terminal, following command needs to be passed : 
+javacheck -processor org.checkerframework.checker.nullness.NullnessChecker Annoted/fileQuery/src/com/assignment/filequery/*.java
 
 and for index cheker
 
-javacheck -processor  index  Annoted/fileQuery/src/com/assignment/filequery/{Name of the java file}
+javacheck -processor  index  Annoted/fileQuery/src/com/assignment/filequery/*.java
 
 
 Note : Here javacheck is an alias of $CHECKERFRAMEWORK/checker/bin/javac which is created by adding the following syntax in the ~/.bashrc file as mentioned in the manual :

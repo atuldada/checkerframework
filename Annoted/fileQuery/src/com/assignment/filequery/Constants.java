@@ -8,7 +8,7 @@ package com.assignment.filequery;
  */
 public interface Constants {
 	
-	public static final String FILENAME = System.getProperty("user.dir")+"/src/Agn1Data.txt";
+	public static final String FILENAME = System.getProperty("user.dir")+"/fileQuery/src/Agn1Data.txt";
 	public static final int MAX_ENTRY = 1000000;
 	public static final String PRINT_TREE = "printing tree for location";
 	public static final String PROFESSIONS = "Professions";
